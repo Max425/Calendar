@@ -105,7 +105,7 @@ int main()
     }
     catch (invalid_argument ex) {
         cout << ex.what();
-        return;
+        return -1;
     }
     cout << "День недели по дате: " << calendar->GetDayOfWeekByData() << endl;
     cout << "Количество дней в месяце: " << calendar->GetCountOfDayInMonth() << endl;
